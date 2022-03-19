@@ -1,0 +1,154 @@
+.six {
+  min-height: 600px;
+  max-height: 1000vh !important;
+  overflow: hidden;
+}
+
+.img-7 {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  top: 60px;
+  right: 150px;
+  background-image: url("../../assets/images/Chidren/7.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+
+.img-7-shade {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  right: 150px;
+  background-color: #a356ff;
+  background-position: center center;
+  opacity: 0.25;
+  background-size: 100% 100%;
+}
+
+.absolute-container-six {
+  height: 700px !important;
+}
+
+.img-8 {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 480px;
+  right: 355px;
+  background-image: url("../../assets/images/Chidren/8.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+
+.img-8-shade {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 480px;
+  right: 355px;
+  background-color: #a356ff;
+  background-position: center center;
+  opacity: 0.25;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .img-7,
+  .img-7-shade {
+    width: 400px;
+    height: 350px;
+  }
+  .img-8,
+  .img-8-shade {
+    width: 250px;
+    height: 180px;
+    top: 430px;
+    right: 400px;
+  }
+  .six-align {
+    margin-left: -100px !important;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 992px) {
+  .img-7,
+  .img-7-shade {
+    width: 350px;
+    height: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .img-8,
+  .img-8-shade {
+    top: 400px;
+    right: 100px;
+    /* transform: translateX(-50%); */
+  }
+  .six-align {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .absolute-container-six {
+    height: 600px !important;
+  }
+  .img-7,
+  .img-7-shade {
+    width: 260px;
+    height: 250px;
+    right: 50px;
+  }
+  .img-8,
+  .img-8-shade {
+    top: 340px;
+    left: 30px;
+    width: 250px;
+    height: 170px;
+  }
+  .six-button {
+    bottom: -70px !important;
+    right: 30px !important;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 500px) {
+  .absolute-container-six {
+    height: 800px !important;
+  }
+  .six {
+    max-height: 1500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .six {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 680px) and (min-width: 501px) {
+  .img-8,
+  .img-8-shade {
+    left: 10%;
+  }
+}
+
+.six-button {
+  position: absolute;
+  right: 35%;
+  transform: translateX(-30%);
+  bottom: 30px;
+}
+
+@media (min-width: 1050px) {
+  .six-align {
+    margin-top: 50px !important;
+  }
+}

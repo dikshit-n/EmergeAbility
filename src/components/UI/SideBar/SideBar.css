@@ -1,0 +1,252 @@
+.SideBar {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.SideBar .mobile-only {
+  display: none;
+}
+
+.SideBar::-webkit-scrollbar {
+  display: none;
+}
+
+.rainbow-sidebar {
+  background-image: url("../../../assets/images/BackGround\ Images/20127.png");
+  width: 90vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.each-nav a {
+  text-decoration: none;
+}
+.each-nav a:hover {
+  opacity: 095 !important;
+  text-decoration: none;
+}
+
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .rainbow-sidebar {
+    width: 80vw;
+    height: 95vh;
+  }
+  .each-nav .nav-name a {
+    font-size: 40px !important;
+  }
+  .sidebar-button {
+    right: 35vw !important;
+    bottom: 50px !important;
+  }
+}
+
+@media (min-width: 614px) and (max-width: 800px) {
+  .navs {
+    max-width: 500px !important;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 801px) {
+  .rainbow-sidebar {
+    background-size: cover;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .SideBar .mobile-only {
+    display: block;
+  }
+  .sidebar-button {
+    display: none !important;
+  }
+  .sidebar-logo {
+    width: 100px !important;
+    height: 50px !important;
+    left: 30px !important;
+  }
+  .sidebar-social-links {
+    /* display: block; */
+    display: flex !important;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+  .rainbow-sidebar {
+    background-size: cover;
+    width: 100vw !important;
+    top: 70vh;
+  }
+  .sidebar-social-links-words {
+    display: none !important;
+  }
+  .sidebar-social-links i {
+    width: 30px !important;
+    height: 30px !important;
+    -webkit-text-stroke: 1px black !important;
+    color: white !important;
+    background-color: transparent;
+  }
+  .sidebar-social-links-words {
+    display: none;
+  }
+
+  .each-nav .nav-name a {
+    font-size: 50px !important;
+  }
+  .each-nav {
+    margin: 2px !important;
+  }
+  .each-nav:nth-child(even) {
+    margin-left: 15vw !important;
+  }
+  .navs {
+    top: 100px !important;
+  }
+}
+
+@media (max-height: 690px) {
+  .each-nav .nav-name a {
+    font-size: 50px !important;
+  }
+  .SideBar {
+    height: fit-content;
+    overflow: scroll;
+  }
+  .sidebar-social-links {
+    position: fixed;
+  }
+}
+
+.sidebar-social-links {
+  display: none;
+}
+
+.sidebar-logo {
+  max-width: 250px !important;
+  max-height: 120px !important;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+.sidebar-social-links i {
+  background-color: white;
+  color: white !important;
+  -webkit-text-stroke: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.sidebar-social-links-words {
+  font-size: 20px !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: fit-content;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+}
+.green-hover:hover {
+  transition: all 0.3s ease-out;
+  color: #77bf51 !important;
+}
+
+.red-hover:hover {
+  transition: all 0.3s ease-out;
+  color: #fe5578 !important;
+}
+
+.yellow-hover:hover {
+  transition: all 0.3s ease-out;
+  color: #ddc736 !important;
+}
+
+.navs {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.each-nav {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 20px;
+}
+.each-nav a {
+  transition: all 0.3s ease-out;
+}
+.each-nav .nav-number {
+  transform: rotate(-90deg);
+  width: 5px;
+  position: relative;
+  opacity: 0.15;
+}
+
+.each-nav .nav-number p {
+  font-size: 10px !important;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+.each-nav .nav-name a {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.sidebar-button {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  right: 44vw;
+}
+
+.open {
+  transition: all 0.5s ease-out;
+  /* transform: translateX(0); */
+  animation: open-up 0.5s forwards;
+}
+
+@keyframes open-up {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+.close {
+  transition: all 0s ease-out !important;
+  transform: translateX(-200vh);
+  display: none;
+  /* transform: rotateZ(-30deg);
+  transition: transform 1s, left 1s; */
+}

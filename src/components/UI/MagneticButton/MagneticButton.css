@@ -1,0 +1,71 @@
+.button {
+  position: relative;
+  background: rebeccapurple;
+  border-radius: 50%;
+  border: 5px solid white;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.rounded-button {
+  border: 1px solid black;
+  outline: none !important;
+  background-color: transparent;
+  padding: 10px;
+  /* transition: color 200ms ease; */
+  box-sizing: border-box;
+  /* clip-path: circle(0% at 50% 50%); */
+}
+
+.rounded-button div {
+  box-sizing: border-box;
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 500ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .rounded-button:hover div {
+  box-shadow: 0 0 15px 0 grey;
+  background-color: #a717ee;
+  clip-path: circle(100% at 50% 50%);
+} */
+/* .rounded-button:hover {
+  border-color: #a717ee !important;
+  border-width: 2px;
+} */
+
+/* .rounded-button:hover div p {
+  color: white !important;
+} */
+
+.rounded-button:active {
+  box-shadow: 0 0 5px 0 grey;
+}
+.skip-icon {
+  width: 25px;
+  height: 20px;
+  margin: 2px auto;
+}
+
+.rounded-button p {
+  font-size: 10px;
+}
+
+@media (max-width: 700px) {
+  .rounded-button {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}

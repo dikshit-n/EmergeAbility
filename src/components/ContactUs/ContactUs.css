@@ -1,0 +1,77 @@
+.emp {
+  width: 20%;
+}
+
+.contact-left-scroll {
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+@media (max-width: 1000px) {
+  .contact-left-scroll {
+    display: none;
+  }
+}
+
+.contact-us-para {
+  width: 500px;
+  margin-top: 30px;
+}
+.contact-us-number {
+  font-size: 150px !important;
+  font-family: "Pistilli-Roman";
+}
+
+@font-face {
+  font-family: "Pistilli-Roman";
+  src: url("../../assets/Font/Pistilli-Roman\ \(numbers\)/Pistilli-Roman.otf")
+    format("opentype");
+}
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .contact-us-para {
+    min-width: 500px;
+  }
+  .contact-left-scroll {
+    margin-top: -200px;
+    margin-left: 50px;
+  }
+  .each-contact-row:nth-child(2),
+  .each-contact-row:nth-child(3) {
+    margin-top: -50px !important;
+  }
+}
+
+.each-contact-row {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1099px) {
+  .contact-us-para {
+    width: fit-content !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-us-number {
+    font-size: 70px !important;
+  }
+  .each-contact-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .emp {
+    display: none;
+  }
+  .contact-us-para {
+    margin-top: 0;
+  }
+  .contactus-button {
+    top: 20px !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+}
+.contactus-button {
+  margin: auto;
+}

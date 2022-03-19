@@ -1,0 +1,14 @@
+.GreenLine {
+  width: 70px;
+  height: 2px;
+  background-color: #8faf3d;
+  border-radius: 3px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .GreenLine {
+    width: 50px;
+    height: 2px;
+  }
+}

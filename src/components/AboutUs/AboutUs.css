@@ -1,0 +1,113 @@
+.aboutus-image {
+  position: relative;
+  width: 500px;
+  margin-left: 200px;
+  margin-top: -50px;
+  height: 500px;
+  /* background-image: url("../../assets/images/videos/rubix.gif"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us {
+  margin-top: 100px;
+}
+
+.aboutus-image h1 {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.about-us-content {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.aboutus-scroll-to {
+  position: absolute;
+  bottom: 150px;
+  left: -100px;
+}
+
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .aboutus-image {
+    width: 450px;
+    height: 450px;
+    margin-left: 100px;
+    /* margin-bottom: 100px; */
+  }
+  .about-us-content {
+    bottom: 25%;
+  }
+  .aboutus-scroll-to {
+    left: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 992px) {
+  .aboutus-button {
+    top: 40% !important;
+    position: absolute !important;
+    left: 40% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutus-scroll-to {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutus-image h1 {
+    display: none;
+  }
+
+  .about-us-content {
+    position: relative !important;
+    top: 0;
+  }
+  .about-us-content h1 {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  .aboutus-image {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+  }
+  .aboutus-button {
+    top: 40% !important;
+    position: absolute !important;
+    left: 40% !important;
+  }
+  .about-us {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 501px) {
+  .about-us-content {
+    position: relative !important;
+    top: 0;
+  }
+  .aboutus-image {
+    width: 90%;
+    height: 340px;
+    margin: auto;
+  }
+}
+
+.aboutus-button {
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+}

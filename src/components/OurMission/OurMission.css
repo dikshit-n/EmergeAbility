@@ -1,0 +1,118 @@
+.ourmission-image {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  margin-top: -50px;
+  height: 500px;
+  /* background-image: url("../../assets/images/videos/brain.gif"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.myourmission-scroll-to {
+  position: absolute;
+  bottom: 100px;
+  left: -100px;
+}
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .ourmission-image {
+    width: 500px;
+    height: 500px;
+    background-size: 100% 100%;
+  }
+  .our-mission-content {
+    right: 70px !important;
+    top: 0 !important;
+  }
+  .myourmission-scroll-to {
+    bottom: 100px;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .myourmission-scroll-to {
+    display: none;
+  }
+}
+
+.our-mission {
+  margin-top: 100px;
+}
+
+.ourmission-image h1 {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+/* 
+#mi-mag-but {
+  opacity: 0;
+} */
+
+.our-mission-content {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  top: 50px;
+}
+
+@media (max-width: 500px) {
+  .ourmission-image h1 {
+    display: none;
+  }
+  .our-mission {
+    margin-top: 0px;
+  }
+  .our-mission-content {
+    position: relative !important;
+    top: -20px;
+  }
+  .ourmission-image {
+    width: 90%;
+    height: 340px;
+  }
+  .our-mission-button {
+    bottom: -50px !important;
+    position: absolute !important;
+    right: 60px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .change-in-mobile {
+    flex-direction: column-reverse;
+  }
+  .our-mission-content {
+    position: relative !important;
+    top: -20px !important;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1100px) {
+  .our-mission-button {
+    top: 40% !important;
+    position: absolute !important;
+    left: 40% !important;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 501px) {
+  .our-mission-content {
+    position: relative !important;
+    top: 150px;
+  }
+  .ourmission-image {
+    width: 90%;
+    max-width: 500px;
+    height: 450px;
+  }
+}
+
+.our-mission-button {
+  position: absolute;
+  bottom: 10px;
+  right: -110px;
+}

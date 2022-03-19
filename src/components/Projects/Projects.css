@@ -1,0 +1,239 @@
+.My-Projects {
+  min-height: 700px;
+}
+.show-in-mobile {
+  display: none;
+}
+.img-19 {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  background-image: url("../../assets/images/Chidren/19.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+@media (min-width: 1600px) {
+  .projects-content {
+    margin-left: 300px;
+  }
+}
+@media (max-width: 1950px) {
+  .projects-content {
+    margin-left: 300px;
+  }
+  .top-down {
+    margin-left: 0px;
+  }
+}
+.img-19-shade {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: -100px;
+  background-color: #cc5417;
+  background-position: center center;
+  opacity: 0.5;
+  background-size: 100% 100%;
+}
+
+.img-20 {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  left: -150px;
+  top: 230px;
+  background-image: url("../../assets/images/Chidren/20.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  z-index: 0;
+}
+
+.img-20-shade {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  left: -150px;
+  top: 230px;
+  background-color: transparent;
+  background-position: center center;
+  opacity: 0.5;
+  background-size: 100% 100%;
+}
+
+.projects-left-scroll {
+  position: absolute;
+  bottom: 270px;
+  left: 100px;
+  z-index: 10;
+}
+
+@media (max-width: 992px) {
+  .projects-left-scroll {
+    display: none;
+  }
+  .flexy-projects {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1550px) and (min-width: 1000px) {
+  .img-19,
+  .img-19-shade {
+    width: 200px;
+    height: 150px;
+    left: -60px;
+  }
+  .projects-left-scroll {
+    bottom: 350px;
+    left: 50px;
+  }
+  .img-20,
+  .img-20-shade {
+    width: 200px;
+    height: 250px;
+    left: -100px;
+    top: 200px !important;
+  }
+  .flexy-projects {
+    width: 100%;
+    right: 150px !important;
+  }
+  .top-down {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .My-Projects {
+    min-height: 1600px;
+  }
+  .img-19,
+  .img-19-shade {
+    top: 50px;
+    left: 20px;
+    width: 250px;
+    height: 170px;
+  }
+  .flexy-projects {
+    position: relative !important;
+    margin: auto !important;
+    right: 0 !important;
+    padding: 20px;
+  }
+  .top-down {
+    margin-left: 0 !important;
+    margin: auto !important;
+    margin-top: 50px !important;
+    padding: 0 20px;
+  }
+  .hide-in-mobile {
+    display: none;
+  }
+  .show-in-mobile {
+    display: block;
+    height: 600px;
+    width: 100vw !important;
+  }
+  .projects-button {
+    bottom: 30px !important;
+    position: absolute !important;
+    left: 40% !important;
+  }
+  .projects-content {
+    margin-left: 0 !important;
+  }
+}
+
+.top-down {
+  margin-top: 100px;
+  max-width: 80%;
+  margin-left: -100px;
+}
+
+/* @media (min-width: 1000px) {
+  .top-down {
+    position: absolute;
+    top: 0px;
+    left: -250px;
+  }
+} */
+@media (min-width: 1100px) and (max-width: 1400px) {
+  .top-down {
+    margin-top: 0 !important;
+    margin-left: -100px;
+    max-width: 100%;
+  }
+  .projects-button {
+    bottom: 230px !important;
+    right: 130px !important;
+  }
+}
+
+.flexy-projects {
+  position: absolute;
+  right: 300px;
+  width: 350px;
+}
+
+/* @media() */
+
+@media (max-width: 999px) and (min-width: 501px) {
+  .hide-in-mobile {
+    display: none;
+  }
+  .projects-content {
+    margin-left: 0 !important;
+  }
+  .projects-button {
+    bottom: 450px !important;
+    left: 10vw;
+  }
+  .img-19,
+  .img-19-shade {
+    top: 50px;
+    left: 20px;
+    width: 250px;
+    height: 170px;
+  }
+  .top-down {
+    position: relative;
+    margin-left: 0 !important;
+    margin: auto !important;
+    margin-top: 50px !important;
+  }
+  .show-in-mobile {
+    display: block;
+    height: 600px;
+    width: 100vw !important;
+  }
+  .flexy-projects {
+    position: relative !important;
+    margin: auto;
+    right: 0;
+  }
+}
+
+.show-in-mobile .img-19,
+.show-in-mobile .img-19-shade {
+  left: 65%;
+  transform: translateX(-55%);
+}
+
+.show-in-mobile .img-20,
+.show-in-mobile .img-20-shade {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projects-button {
+  position: absolute;
+  bottom: 170px;
+  right: 450px;
+}
