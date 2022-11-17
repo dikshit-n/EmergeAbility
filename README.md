@@ -1,7 +1,7 @@
 # EmergeAbility
 Freelancing project with innovative UX
 
-## [Take a Look](http://emergeability.org/)
+## Take a look - [Demo](http://emergeability.org/)
 
 ![image](https://user-images.githubusercontent.com/62920150/202365187-a0e3bdfc-b833-449c-a096-5828ef3ef9ca.png)
 
