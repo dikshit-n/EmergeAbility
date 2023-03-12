@@ -1,7 +1,8 @@
 # EmergeAbility
-Freelancing project with innovative UX
 
-## Take a look - [Demo](http://emergeability.org/)
+A landing page for a Startup company having motive to fight against Neurodiversity.
+
+## Take a look - [Demo](https://emergeability.vercel.app/)
 
 ![image](https://user-images.githubusercontent.com/62920150/202365187-a0e3bdfc-b833-449c-a096-5828ef3ef9ca.png)
 
